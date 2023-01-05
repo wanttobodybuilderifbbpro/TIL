@@ -1,0 +1,33 @@
+#include<cstring>
+constexpr int MAX=1000001;
+bool prime[MAX];
+void eratosthenes(){
+    memset(prime, false, MAX);//배열을 초기화한다.
+    prime[2]=true;//2는 소수다.
+    prime[3]=true;//3은 소수다. 이러면 5 이상의 홀수만 판별하면 된다.
+    // 5 mod 6 과 1 mod 6을 참으로 설정한다. 이들은 2의배수도 아니고 3의 배수도 아닌 숫자집합이다.
+    // 단, 1은 소수가 아니기에 1 mod 6은 7부터 시작한다.
+    for(int i=5;i<MAX;i+=6)
+        prime[i]=true;
+    for(int i=7;i<MAX;i+=6)
+        prime[i]=true;
+
+    for(int i=5, j=25, flag = 0;j < MAX;){
+        int addi = 2 * (flag + 1)
+        if(prime[i]==true){
+            for(i*=6;j < MAX;j+=i){//i를 2배로 하여 i의 짝수곱을 굳이 검색하지 않게 한다.
+                prime[j]=false;
+            }
+            i/=6;//i 원상복구
+            j+=addi*i
+            for(i*=6;j < MAX;j+=i){//i를 2배로 하여 i의 짝수곱을 굳이 검색하지 않게 한다.
+                prime[j]=false;
+            }
+            i/=6;//i 원상복구
+        }
+        // 다음 루프 진행을 위한 준비. 현재의 i가 5 mod 6 이면 2를, 1 mod 6 이면 4를 더한다.
+        i += ;
+        j=i*i;
+        flag ^= 1;
+    }
+}
