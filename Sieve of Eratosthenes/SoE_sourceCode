@@ -1,4 +1,4 @@
-#include<cstring>
+```#include<cstring>
 constexpr int MAX=1000001;
 bool prime[MAX];
 void eratosthenes(){
@@ -30,4 +30,4 @@ void eratosthenes(){
         j=i*i;
         flag ^= 1;
     }
-}
+```}
