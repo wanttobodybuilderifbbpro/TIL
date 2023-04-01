@@ -12,6 +12,22 @@ let result2 = Number(material2 + material4);
 /* example
 let result1 = material2 + material4;
 let result2 = Number(result1);
+e.g.1. result2 = material1 * material3 + material5;
+e.g.2. result2 = material2 + material5;
+e.g.3. String(material1) + material5;
+e.g.4. material1 + String(material5);
+e.g.5. String(material1) + String(material5);
+e.g.6. String(material1 * material3 + Number(material4));
+
+숫자 34
+e.g.7. material2 * material3 + material5;
+e.g.8. material1 * material3 + Number(material4);
+e.g.9. Number(String(material1) + material5);
+e.g.10.Number(material2 + material4);
+
+좀더 간편하게
+e.g.11. result1 = material2 + material4;
+result2 = Number(result1);
  */
 
 // make the sentence '34' and number 34.
