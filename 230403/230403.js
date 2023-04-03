@@ -1,5 +1,5 @@
 //Using parameter height, make the function "CheckHeight"
-function checkHeight(hegiht){
+function checkHeight(height){
   //note codes to this part.
   const LIMIT = 140;
   let passMessage = '탑승이 가능합니다.';
