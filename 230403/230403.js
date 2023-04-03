@@ -5,7 +5,7 @@ function checkHeight(hegiht){
   let passMessage = '탑승이 가능합니다.';
   let failMessage = '탑승이 불가능합니다.';
 
-  if(LIMIT >= 140){
+  if(height >= 140){
     console.log(passMessage);
   } else{
     console.log(failMessage);
